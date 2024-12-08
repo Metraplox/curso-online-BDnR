@@ -19,16 +19,9 @@ cd curso-online-backend
 npm install
 Copy
 3. Configura las variables de entorno:
-- Crea un archivo `.env` en la raíz del proyecto.
-- Agrega las siguientes variables de entorno:
-  - `MONGODB_URI`: URL de conexión a MongoDB (por ejemplo, `mongodb://localhost:27017/curso-online`)
-  - `REDIS_URI`: URL de conexión a Redis (por ejemplo, `redis://localhost:6379`)
-  - `NEO4J_URI`: URL de conexión a Neo4j (por ejemplo, `bolt://localhost:7687`)
-  - `NEO4J_USER`: Usuario de Neo4j
-  - `NEO4J_PASSWORD`: Contraseña de Neo4j
-  - `PUERTO`: Puerto en el que se ejecutará el servidor (opcional, por defecto es 4000)
+- Renombra el archivo `.env.example` a `.env`.
 
-4. Inicia el servidor:
+1. Inicia el servidor:
 npm start
 Copy
 ## Poblar las bases de datos
@@ -37,10 +30,6 @@ Para poblar las bases de datos con datos de prueba, envía una solicitud POST a 
 curl -X POST http://localhost:4000/api/populate
 Copy
 Esta ruta creará cursos, usuarios, comentarios y progreso en las diferentes bases de datos.
-
-## Documentación de la API
-
-La documentación de los endpoints de la API se encuentra en el código fuente, específicamente en los archivos de rutas (`routes/`). Cada ruta tiene un comentario que describe su funcionalidad, parámetros y respuestas.
 
 ## Estructura del proyecto
 
