@@ -13,22 +13,22 @@ Este es un proyecto backend para una plataforma de cursos en línea, desarrollad
 
 1. Clona el repositorio:
 git clone https://github.com/tu-usuario/curso-online-backend.git
-Copy
-2. Instala las dependencias:
+
+1. Instala las dependencias:
 cd curso-online-backend
 npm install
-Copy
-3. Configura las variables de entorno:
+
+1. Configura las variables de entorno:
 - Renombra el archivo `.env.example` a `.env`.
 
 1. Inicia el servidor:
 npm start
-Copy
+
 ## Poblar las bases de datos
 
 Para poblar las bases de datos con datos de prueba, envía una solicitud POST a la ruta `/api/populate`:
 curl -X POST http://localhost:4000/api/populate
-Copy
+
 Esta ruta creará cursos, usuarios, comentarios y progreso en las diferentes bases de datos.
 
 ## Estructura del proyecto
